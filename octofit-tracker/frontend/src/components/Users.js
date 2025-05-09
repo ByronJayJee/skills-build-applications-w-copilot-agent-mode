@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://shiny-journey-69p76p4xgxr24rrg-8000.app.github.dev/api/users/')
+    fetch('http://127.0.0.1:8000/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching users:', error));

@@ -4,7 +4,7 @@ function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
 
   useEffect(() => {
-    fetch('https://shiny-journey-69p76p4xgxr24rrg-8000.app.github.dev/api/leaderboard/')
+    fetch('http://127.0.0.1:8000/api/leaderboard/')
       .then(response => response.json())
       .then(data => setLeaderboard(data))
       .catch(error => console.error('Error fetching leaderboard:', error));

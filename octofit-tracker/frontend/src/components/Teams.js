@@ -4,7 +4,7 @@ function Teams() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch('https://shiny-journey-69p76p4xgxr24rrg-8000.app.github.dev/api/teams/')
+    fetch('http://127.0.0.1:8000/api/teams/')
       .then(response => response.json())
       .then(data => setTeams(data))
       .catch(error => console.error('Error fetching teams:', error));

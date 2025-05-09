@@ -4,7 +4,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    fetch('https://shiny-journey-69p76p4xgxr24rrg-8000.app.github.dev/api/workouts/')
+    fetch('http://127.0.0.1:8000/api/workouts/')
       .then(response => response.json())
       .then(data => setWorkouts(data))
       .catch(error => console.error('Error fetching workouts:', error));

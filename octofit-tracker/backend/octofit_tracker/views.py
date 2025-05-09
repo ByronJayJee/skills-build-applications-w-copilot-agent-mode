@@ -6,7 +6,8 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = 'https://shiny-journey-69p76p4xgxr24rrg-8000.app.github.dev/'
+    #base_url = 'https://shiny-journey-69p76p4xgxr24rrg-8000.app.github.dev/'
+    base_url = 'https://127.0.0.1:8000/'
     return Response({
         'users': base_url + 'api/users/',
         'teams': base_url + 'api/teams/',
